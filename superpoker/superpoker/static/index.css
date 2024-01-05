@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  padding: 16px 60px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(61, 183, 194);
+}
+header #logo {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+header #logo a {
+  color: white;
+}
+header nav ul li a {
+  padding: 10px 26px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  transition-duration: 300ms;
+}
+header nav ul li a:hover {
+  background-color: rgb(0, 0, 0);
+}
+header nav ul li a.active {
+  color: white;
+  background-color: #00000035;
+}
+header nav ul {
+  display: flex;
+  gap: 30px;
+}
+main {
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 200px 150px;
+}
+#download{
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 60px;
+  margin-top: 15px;
+  background-color: rgb(61, 183, 194);
+  border-radius: 35px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: .5px;
+}
+#logo img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+#banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#banner img{
+    width: 400px;
+}
