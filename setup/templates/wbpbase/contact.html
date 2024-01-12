@@ -1,50 +1,23 @@
+{% extends 'wbpbase/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Poker Info</title>
-    <link rel="stylesheet" href={% static "/contact.css" %}>
-</head>
+{% block css %}
+<link rel="stylesheet" href="{% static '/contact.css' %}">
+{% endblock %}
 
-<body>
-    <header>
-        <div id="logo">
-            <a href="index.html">Super Poker</a><img src="https://cdn-icons-png.flaticon.com/512/107/107589.png" alt="">
+{% block content %}
+<main>
+    <section id="banner">
+        <div class="content">
+            <h2>Entre em contato</h2>
+            <p>+12 (34) 56789-1011</p>
+            <p>email@superpoker.com</p>
+            <p>Rua Lorem ipsum, 123, Fortaleza - CE, Brasil</p>
+
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href={% url "index" %} class="active">Início</a>
-                </li>
-                <li>
-                    <a href={% url "register" %}>Registro</a>
-                </li>
-                <li>
-                    <a href={% url "grid" %}>Grade de Torneios</a>
-                </li>
-                <li>
-                    <a href={% url "contact" %}>Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="banner">
-            <div class="content">
-                <h2>Entre em contato</h2>
-                <p>+12 (34) 56789-1011</p>
-                <p>email@superpoker.com</p>
-                <p>Rua Lorem ipsum, 123, Fortaleza - CE, Brasil</p>
-
-            </div>
-            <div>
-                <img src="https://statics.superpoker.com.br/img/super_poker_logo.png" alt="">
-            </div>
-        </section>
-    </main>
-
-</body>
-
-</html>
+        <div>
+            <img src="https://statics.superpoker.com.br/img/super_poker_logo.png" alt="">
+        </div>
+    </section>
+</main>
+{% endblock %}

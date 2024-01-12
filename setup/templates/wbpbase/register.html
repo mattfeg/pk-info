@@ -1,53 +1,26 @@
+{% extends 'wbpbase/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Poker Info</title>
-    <link rel="stylesheet" href={% static "/register.css" %}>
-</head>
+{% block css %}
+<link rel="stylesheet" href="{% static '/register.css' %}">
+{% endblock %}
 
-<body>
-    <header>
-        <div id="logo">
-            <a href="index.html">Super Poker</a><img src="https://cdn-icons-png.flaticon.com/512/107/107589.png" alt="">
+{% block content %}
+<main>
+    <section id="banner">
+        <div>
+            <img src="https://statics.superpoker.com.br/img/super_poker_logo.png" alt="">
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href={% url "index" %} class="active">Início</a>
-                </li>
-                <li>
-                    <a href={% url "register" %}>Registro</a>
-                </li>
-                <li>
-                    <a href={% url "grid" %}>Grade de Torneios</a>
-                </li>
-                <li>
-                    <a href={% url "contact" %}>Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="banner">
-            <div>
-                <img src="https://statics.superpoker.com.br/img/super_poker_logo.png" alt="">
-            </div>
-            <form>
-                <h3>Faça seu cadastro abaixo:</h3>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" placeholder="Seu nome" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="email@email.com" required>
-                <label for="senha">Senha:</label>
-                <input type="password" id="password" placeholder="Sua senha">
-                <button type="submit">Cadastrar</button>
-              </form>
-        </section>
-    </main>
-
-</body>
-
-</html>
+        <form>
+            <h3>Faça seu cadastro abaixo:</h3>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Seu nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="email@email.com" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="password" placeholder="Sua senha">
+            <button type="submit">Cadastrar</button>
+            </form>
+    </section>
+</main>
+{% endblock %}

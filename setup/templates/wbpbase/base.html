@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Poker Info</title>
+    {% block css %}{% endblock %}
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">Super Poker</a><img src="https://cdn-icons-png.flaticon.com/512/107/107589.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href={% url "index" %} class="active">Início</a>
+                </li>
+                <li>
+                    <a href={% url "register" %}>Registro</a>
+                </li>
+                <li>
+                    <a href={% url "grid" %}>Grade de Torneios</a>
+                </li>
+                <li>
+                    <a href={% url "contact" %}>Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %}{% endblock %}
+</body>
+
+</html>
