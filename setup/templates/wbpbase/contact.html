@@ -1,0 +1,23 @@
+{% extends 'wbpbase/base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static '/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+<main>
+    <section id="banner">
+        <div class="content">
+            <h2>Entre em contato</h2>
+            <p>+12 (34) 56789-1011</p>
+            <p>email@superpoker.com</p>
+            <p>Rua Lorem ipsum, 123, Fortaleza - CE, Brasil</p>
+
+        </div>
+        <div>
+            <img src="https://statics.superpoker.com.br/img/super_poker_logo.png" alt="">
+        </div>
+    </section>
+</main>
+{% endblock %}

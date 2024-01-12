@@ -1,0 +1,21 @@
+{% extends "wbpbase/base.html" %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static '/index.css' %}">
+{% endblock %}
+
+{% block content %}
+<main>
+    <section id="banner">
+        <div class="content">
+            <h2>Super Poker</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores asperiores officiis iure quasi pariatur repellendus ab aspernatur. Incidunt itaque odit voluptatem veritatis, inventore, libero fugiat harum minus voluptatum, ipsum eum.</p>
+            <a id="download" href="#!">Download</a>
+        </div>
+        <div>
+            <img src="https://statics.superpoker.com.br/img/super_poker_logo.png" alt="">
+        </div>
+    </section>
+</main>
+{% endblock %}

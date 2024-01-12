@@ -2,3 +2,4 @@ venv/
 .idea
 .DS_Store
 setup/setup/envvars.py
+__pychache__/
