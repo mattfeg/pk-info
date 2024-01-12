@@ -1,10 +1,20 @@
 {% extends 'wbpbase/base.html' %}
 {% load static %}
-
-{% block css %}
-<link rel="stylesheet" href="{% static '/register.css' %}">
+{% block css %}<link rel="stylesheet" href="{% static '/register.css' %}">{% endblock %}
+{% block classactv %}
+<li>
+    <a href="{% url 'index' %}">Início</a>
+</li>
+<li>
+    <a href="{% url 'register' %}" class="active">Registro</a>
+</li>
+<li>
+    <a href="{% url 'grid' %}">Grade de Torneios</a>
+</li>
+<li>
+    <a href="{% url 'contact' %}">Contato</a>
+</li>
 {% endblock %}
-
 {% block content %}
 <main>
     <section id="banner">

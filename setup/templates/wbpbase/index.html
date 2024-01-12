@@ -1,8 +1,20 @@
 {% extends "wbpbase/base.html" %}
 {% load static %}
+{% block css %}<link rel="stylesheet" href="{% static '/index.css' %}">{% endblock %}
 
-{% block css %}
-<link rel="stylesheet" href="{% static '/index.css' %}">
+{% block classactv %}
+<li>
+    <a href="{% url 'index' %}" class="active">Início</a>
+</li>
+<li>
+    <a href="{% url 'register' %}">Registro</a>
+</li>
+<li>
+    <a href="{% url 'grid' %}">Grade de Torneios</a>
+</li>
+<li>
+    <a href="{% url 'contact' %}">Contato</a>
+</li>
 {% endblock %}
 
 {% block content %}
