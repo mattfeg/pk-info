@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Poker Info</title>
-    <link rel="stylesheet" href="../../static/register.css">
+    <link rel="stylesheet" href={% static "/register.css" %}>
 </head>
 
 <body>
@@ -15,16 +16,16 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Início</a>
+                    <a href={% url "index" %} class="active">Início</a>
                 </li>
                 <li>
-                    <a href="register.html" class="active">Registro</a>
+                    <a href={% url "register" %}>Registro</a>
                 </li>
                 <li>
-                    <a href="grid.html">Grade de Torneios</a>
+                    <a href={% url "grid" %}>Grade de Torneios</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contato</a>
+                    <a href={% url "contact" %}>Contato</a>
                 </li>
             </ul>
         </nav>

@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Poker Info</title>
-    <link rel="stylesheet" href="../../static/contact.css">
+    <link rel="stylesheet" href={% static "/index.css" %}>
 </head>
 
 <body>
@@ -15,16 +16,16 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Início</a>
+                    <a href={% url "index" %} class="active">Início</a>
                 </li>
                 <li>
-                    <a href="register.html">Registro</a>
+                    <a href={% url "register" %}>Registro</a>
                 </li>
                 <li>
-                    <a href="grid.html">Grade de Torneios</a>
+                    <a href={% url "grid" %}>Grade de Torneios</a>
                 </li>
                 <li>
-                    <a href="contact.html" class="active">Contato</a>
+                    <a href={% url "contact" %}>Contato</a>
                 </li>
             </ul>
         </nav>
@@ -32,11 +33,9 @@
     <main>
         <section id="banner">
             <div class="content">
-                <h2>Entre em contato</h2>
-                <p>+12 (34) 56789-1011</p>
-                <p>email@superpoker.com</p>
-                <p>Rua Lorem ipsum, 123, Fortaleza - CE, Brasil</p>
-
+                <h2>Super Poker</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores asperiores officiis iure quasi pariatur repellendus ab aspernatur. Incidunt itaque odit voluptatem veritatis, inventore, libero fugiat harum minus voluptatum, ipsum eum.</p>
+                <a id="download" href="#!">Download</a>
             </div>
             <div>
                 <img src="https://statics.superpoker.com.br/img/super_poker_logo.png" alt="">
